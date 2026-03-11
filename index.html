@@ -1,95 +1,269 @@
 <!DOCTYPE html>
-<html lang="pt-br">
-
+<html lang="pt-BR">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Colégio Estadual Padre Ponciano José de Araújo</title>
-    <link rel="stylesheet" href="styles.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Colégio Padre Ponciano José de Araújo</title>
+  <link rel="stylesheet" href="style.css" />
 </head>
-
 <body>
-    <header>
-        <div class="topo">
+  <header>
+    <div class="topo">
+      <div class="titulo-area">
+        <h1>Colégio Padre Ponciano José de Araújo</h1>
+        <p>Portal informativo com notícias, comunicados, agenda escolar e serviços.</p>
+      </div>
 
-            <div class="titulo-area">
-                <h1>Colégio Estadual Padre Ponciano de Araújo</h1>
-                <p>Portal Informativo com notícias, comunicados, agenda escolar, e serviços</p>
-            </div>
+      <div class="logo-area">
+        <img src="logo.png" alt="Logo do Colégio Padre Ponciano José de Araújo" class="logo" />
+      </div>
+    </div>
 
-            <div class="logo-area">
-                <img src="logo.png" alt="Logo do colégio estadual Padre Ponciano José de Araújo">
+    <nav>
+      <ul class="menu">
+        <li><a href="#inicio">Início</a></li>
+
+        <li class="dropdown-item">
+          <a href="#">Institucional ▾</a>
+          <ul class="dropdown">
+            <li><a href="#">História</a></li>
+            <li><a href="#">Missão e Valores</a></li>
+            <li><a href="#">Equipe Gestora</a></li>
+            <li><a href="#">Professores</a></li>
+            <li><a href="#">Infraestrutura</a></li>
+          </ul>
+        </li>
+
+
+       
+        <li class="dropdown-item">
+          <a href="#">Acadêmico ▾</a>
+          <ul class="dropdown">
+            <li><a href="#">Calendário Escolar</a></li>
+            <li><a href="#">Horários</a></li>
+            <li><a href="#">Projetos Pedagógicos</a></li>
+            <li><a href="#">Boletim</a></li>
+            <li><a href="#">Avaliações</a></li>
+          </ul>
+        </li>
+
+ 
+
+        <li class="dropdown-item">
+          <a href="#">Alunos ▾</a>
+          <ul class="dropdown">
+            <li><a href="#">Portal do Aluno</a></li>
+            <li><a href="#">Biblioteca</a></li>
+            <li><a href="#">Atividades</a></li>
+            <li><a href="#">Simulados</a></li>
+            <li><a href="#">Normas</a></li>
+          </ul>
+        </li>
+
+
+      
+        <li class="dropdown-item">
+          <a href="#">Responsáveis ▾</a>
+          <ul class="dropdown">
+            <li><a href="#">Comunicados</a></li>
+            <li><a href="#">Reuniões</a></li>
+            <li><a href="#">Atendimento</a></li>
+            <li><a href="#">Matrículas</a></li>
+            <li><a href="#">Documentos</a></li>
+          </ul>
+        </li>
+ 
+        <li class="dropdown-item">
+          <a href="#">Serviços ▾</a>
+          <ul class="dropdown">
+            <li><a href="#">Secretaria Online</a></li>
+            <li><a href="#">Ouvidoria</a></li>
+            <li><a href="#">Transporte</a></li>
+            <li><a href="#">Cantina</a></li>
+            <li><a href="#">Contato</a></li>
+          </ul>
+        </li>
+
+        <li><a href="#noticias">Notícias</a></li>
+        <li><a href="#rodape">Contato</a></li>
+      </ul>
+
+      <button id="btn-menu" class="btn-menu">☰ Menu</button>
+    </nav>
+  </header>
+
+
+<!------------------------------------------------------------------------------------------->
+<!--Até aqui no html Agora vou pro css Depois volto pra ca abaixo nao esta nada feito ainda-->
+  <section class="hero" id="inicio">
+    <div class="banner">
+      <h2>Bem-vindos ao portal do colégio</h2>
+      <p>
+        Aqui você encontra notícias, agenda, comunicados, projetos e informações
+        importantes da comunidade escolar. Azul royal reinando bonito, como manda a cerimônia.
+      </p>
+      <div class="acoes">
+        <a href="#noticias" class="btn btn-claro">Ver notícias</a>
+        <a href="#agenda" class="btn btn-borda">Agenda escolar</a>
+      </div>
+    </div>
+
+    <aside class="painel">
+      <h3>Acesso rápido</h3>
+      <ul>
+        <li>Matrículas abertas</li>
+        <li>Boletim online</li>
+        <li>Calendário escolar</li>
+        <li>Portal do aluno</li>
+        <li>Comunicado aos pais</li>
+      </ul>
+    </aside>
+  </section>
+
+  <main>
+    <section class="indicadores">
+      <div class="card-info">
+        <h3>1.200+</h3>
+        <p>Estudantes</p>
+      </div>
+      <div class="card-info">
+        <h3>80+</h3>
+        <p>Profissionais</p>
+      </div>
+      <div class="card-info">
+        <h3>20+</h3>
+        <p>Projetos escolares</p>
+      </div>
+      <div class="card-info">
+        <h3>100%</h3>
+        <p>Compromisso com a educação</p>
+      </div>
+    </section>
+
+    <section class="conteudo-principal">
+      <div class="area-noticias" id="noticias">
+        <h2>Últimas notícias</h2>
+
+        <div class="grid-noticias">
+          <article class="noticia">
+            <div class="img-noticia">Notícia 01</div>
+            <div class="texto-noticia">
+              <span>Destaque</span>
+              <h3>Feira de Ciências movimenta toda a escola</h3>
+              <p>Os alunos apresentaram projetos criativos com foco em tecnologia, sustentabilidade e inovação.</p>
+              <a href="#">Ler mais</a>
             </div>
+          </article>
+
+          <article class="noticia">
+            <div class="img-noticia">Notícia 02</div>
+            <div class="texto-noticia">
+              <span>Eventos</span>
+              <h3>Semana cultural terá exposições e apresentações</h3>
+              <p>A programação reúne arte, música, teatro e participação de estudantes e famílias.</p>
+              <a href="#">Ler mais</a>
+            </div>
+          </article>
+
+          <article class="noticia">
+            <div class="img-noticia">Notícia 03</div>
+            <div class="texto-noticia">
+              <span>Comunicado</span>
+              <h3>Calendário de avaliações já está disponível</h3>
+              <p>As datas das provas e atividades do bimestre podem ser consultadas no portal escolar.</p>
+              <a href="#">Ler mais</a>
+            </div>
+          </article>
+
+          <article class="noticia">
+            <div class="img-noticia">Notícia 04</div>
+            <div class="texto-noticia">
+              <span>Esportes</span>
+              <h3>Equipe escolar conquista medalhas em competição regional</h3>
+              <p>Os estudantes se destacaram em diversas modalidades e trouxeram excelentes resultados.</p>
+              <a href="#">Ler mais</a>
+            </div>
+          </article>
+        </div>
+      </div>
+
+      <aside class="sidebar">
+        <div class="box" id="agenda">
+          <h3>Agenda escolar</h3>
+          <ul>
+            <li>12/03 - Reunião pedagógica</li>
+            <li>15/03 - Feira do livro</li>
+            <li>18/03 - Jogos interclasses</li>
+            <li>22/03 - Mostra cultural</li>
+          </ul>
         </div>
 
-        <nav>
-            <ul class="menu">
-                <li><a href="#inicio">Ínicio</a></li>
+        <div class="box">
+          <h3>Comunicados</h3>
+          <ul>
+            <li>Entrega de boletins na próxima semana</li>
+            <li>Atualização de cadastro dos responsáveis</li>
+            <li>Inscrições abertas para olimpíadas</li>
+            <li>Reunião do ensino médio</li>
+          </ul>
+        </div>
 
-                <li class="dropdown-item">
-                    <a href="#">Institucional</a>
-                    <ul>
-                        <li><a href="#">História</a></li>
-                        <li><a href="#">Missão e Valores</a></li>
-                        <li><a href="#">Equipe Gestora</a></li>
-                        <li><a href="#">Professores</a></li>
-                        <li><a href="#">Infraestrutura</a></li>
-                    </ul>
-                </li>
+        <div class="box">
+          <h3>Links úteis</h3>
+          <ul>
+            <li>Portal do aluno</li>
+            <li>Portal do professor</li>
+            <li>Biblioteca virtual</li>
+            <li>Regimento escolar</li>
+          </ul>
+        </div>
+      </aside>
+    </section>
+  </main>
 
-                <li class="dropdown-item">
-                    <a href="#">Acadêmico</a>
-                    <ul>
-                        <li><a href="#">Calendário Escolar</a></li>
-                        <li><a href="#">Horários</a></li>
-                        <li><a href="#">Projetos Pedagógicos</a></li>
-                        <li><a href="#">Boletins</a></li>
-                        <li><a href="#">Avaliações</a></li>
-                    </ul>
-                </li>
+  <footer id="rodape">
+    <div class="rodape-conteudo">
+      <div>
+        <h3>Colégio Padre Ponciano José de Araújo</h3>
+        <p>Educação com qualidade, compromisso social e desenvolvimento humano.</p>
+      </div>
 
-                <li class="dropdown-item">
-                    <a href="#">Alunos</a>
-                    <ul>
-                        <li><a href="#">Portal do Aluno</a></li>
-                        <li><a href="#">Reunioẽs</a></li>
-                        <li><a href="#">Atividades</a></li>
-                        <li><a href="#">Simulados</a></li>
-                        <li><a href="#">Normas</a></li>
-                    </ul>
-                </li>
+      <div>
+        <h4>Institucional</h4>
+        <ul>
+          <li>Quem somos</li>
+          <li>Equipe</li>
+          <li>Projetos</li>
+          <li>Infraestrutura</li>
+        </ul>
+      </div>
 
-                <li class="dropdown-item">
-                    <a href="#">Responsáveis</a>
-                    <ul>
-                        <li><a href="#">Comunicados</a></li>
-                        <li><a href="#">Reunioẽs</a></li>
-                        <li><a href="#">Atendimento</a></li>
-                        <li><a href="#">Matrículas</a></li>
-                        <li><a href="#">Documentos</a></li>
-                    </ul>
-                </li>
+      <div>
+        <h4>Atendimento</h4>
+        <ul>
+          <li>Secretaria</li>
+          <li>Ouvidoria</li>
+          <li>Matrículas</li>
+          <li>Contato</li>
+        </ul>
+      </div>
 
-                <li class="dropdown-item">
-                    <a href="#">Serviços</a>
-                    <ul>
-                        <li><a href="#">Secretaria Online</a></li>
-                        <li><a href="#">Ouvidoria</a></li>
-                        <li><a href="#">Transporte</a></li>
-                        <li><a href="#">Cantina</a></li>
-                        <li><a href="#">Contato</a></li>
-                    </ul>
-                </li>
+      <div>
+        <h4>Contato</h4>
+        <ul>
+          <li>Rua Exemplo, 123 - Centro</li>
+          <li>(41) 3333-4444</li>
+          <li>contato@colegio.com.br</li>
+          <li>Seg a Sex - 07h às 18h</li>
+        </ul>
+      </div>
+    </div>
 
-                <li><a href="#noticias">notícias</a></li>
-                <li><a href="#rodape">Rodapé</a></li>
-            </ul>
+    <div class="copy">
+      © 2026 Colégio Padre Ponciano José de Araújo - Todos os direitos reservados.
+    </div>
+  </footer>
 
-            <button id="btn-menu" class="btn-menu">Menu</button>
-
-        </nav>
-
-    </header>
+  <script src="script.js"></script>
 </body>
-
 </html>
