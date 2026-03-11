@@ -1,0 +1,10 @@
+:root{
+    --azul-royal: #1f4ed8;
+    --azul-escuro: #163ba3;
+    --azul-claro: #eaf1ff;
+    --branco: #ffffff;
+    --cinza: #f4f6fb;
+    --texto: #1f2937;
+    --sombra: 0 10px 25px rgba(0, 0, 0, 0.10);
+    --borda: 1px solid rgba(31, 78, 216, 0.14);
+}
